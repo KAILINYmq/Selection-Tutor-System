@@ -171,3 +171,183 @@ WARNING _internal.py:88  * Debugger is active!
 INFO _internal.py:88  * Debugger PIN: 912-192-467
 INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO _internal.py:88 127.0.0.1 - - [06/Dec/2019 22:33:47] "[37mGET /teacher/ownInfo/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:32:15] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:33:14] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:36:35] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:36:44] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:36:47] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:43:04] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:51:40] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:57:31] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:58:32] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:59:00] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:59:02] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:01:10] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:01:56] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:03:12] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:03:15] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:03:28] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:03:32] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:03:51] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:05:00] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:05:03] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:06:00] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:06:01] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:07:18] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:09:47] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:09:50] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:10:04] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:10:06] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:10:54] "[1m[35mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 11:10:59] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:06:25] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:06:31] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:07:09] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:08:14] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:08:37] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:08:40] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:08:42] "[33mPOST /activity/applying/outteacher?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:09:47] "[33mPOST /teacher/queryInfo?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:09:54] "[33mPOST /teacher/queryInfo?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:12:13] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:12:24] "[37mPOST /teacher/MyTeacher?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:12:29] "[33mPOST /teacher/queryInfo?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:14:03] "[33mPOST /teacher/queryInfo?tid=1&sid=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:14:06] "[1m[35mPOST /teacher/queryInfo?tid=1&sid=1 HTTP/1.1[0m" 500 -
+INFO _internal.py:88  * Detected change in 'E:\\Pycharm\\flask_project_group\\WDNMD\\project\\info\\modules\\Student\\Teacher\\teacher_show_views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 260-314-649
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 12:14:20] "[37mPOST /teacher/queryInfo?tid=1&sid=1 HTTP/1.1[0m" 200 -
