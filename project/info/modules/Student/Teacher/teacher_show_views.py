@@ -101,7 +101,7 @@ def TeacherMessage():
             'name': teacher.name,
             'major': teacher.major,
             'email': teacher.email,
-            'members': student.count(),
+            # 'members': student.count(),
             'ApplicationStatus': 1
         }
     }
