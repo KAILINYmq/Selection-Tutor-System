@@ -35,5 +35,7 @@ def create_app(config_name):
     # 注册蓝图
     from info.modules.teacher import index_blu
     app.register_blueprint(index_blu)
+    from info.modules.Student.Teacher import index_blu_student_teacher
+    app.register_blueprint(index_blu_student_teacher)
 
     return app
