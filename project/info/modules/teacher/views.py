@@ -54,11 +54,11 @@ def index2():
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 3.查询数据
-    try:
-        teacher = models.Teacher.query.get(tid_data)
-    except Exception as e:
-        current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+    # try:
+    #     teacher = models.Teacher.query.get(tid_data)
+    # except Exception as e:
+    #     current_app.logger.error(e)
+    #     return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
 
 
     return "OK"
