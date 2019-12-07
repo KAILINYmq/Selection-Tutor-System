@@ -62,3 +62,25 @@ def index2():
 
 
     return "OK"
+
+
+# TODO 未完成
+@index_blu.route('/student/GroStudent', methods=["POST"])
+def GroStudent():
+    """
+    展示小组的学生
+    :param gid:
+    :return: students sid name className
+    """
+    gid = request.args.get("gid")
+    # if
+    index_blu.Student.query.all()
+
+    # group = index_blu.Group.query.filter_by(id=gid).first()
+    # if not group:
+    #     # return("没有对应的小组")
+    #     return jsonfiy("error_code":1)
+    # else:
+    #     students = [student for student in index_blu.Student.query.all()]
+    #     return jsonfiy({"error_code" : 0,"data":{students}})
+    #
