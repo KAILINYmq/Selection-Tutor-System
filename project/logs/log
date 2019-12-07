@@ -672,3 +672,20 @@ INFO _internal.py:88  * Restarting with stat
 WARNING _internal.py:88  * Debugger is active!
 INFO _internal.py:88  * Debugger PIN: 912-192-467
 INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 912-192-467
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:43:43] "[32mGET /teacher/ownInfo?tid=1 HTTP/1.1[0m" 301 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:43:44] "[37mGET /teacher/ownInfo/?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88 127.0.0.1 - - [07/Dec/2019 10:43:59] "[37mGET /teacher/ownInfo/?tid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\Python\\XM_file\\Python_XM\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 912-192-467
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\Python\\XM_file\\Python_XM\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 912-192-467
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

@@ -1,4 +1,4 @@
-from info.models import Teacher
+from info import models
 from . import index_blu
 from flask import request, current_app
 from flask.json import jsonify
@@ -6,6 +6,7 @@ from info.untils.response_code import RET
 import re
 
 
+# /teacher/ownInfo?tid=1
 @index_blu.route('/teacher/ownInfo/')
 def index1():
     """
@@ -20,7 +21,7 @@ def index1():
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     try:
-        teacher = Teacher.query.get(tid_data)
+        teacher = models.Teacher.query.get(tid_data)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
@@ -53,6 +54,11 @@ def index2():
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 3.查询数据
-    
+    try:
+        teacher = models.Teacher.query.get(tid_data)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+
 
     return "OK"
