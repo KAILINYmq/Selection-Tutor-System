@@ -4,6 +4,9 @@ class Config(object):
     """工程配置信息"""
     DEBUG = True
 
+    # 生成数据库模型
+    # flask-sqlacodegen --outfile models.py --flask mysql+pymysql://root:123456@47.100.50.208:3307/doubleSelect
+    # flask-sqlacodegen "mysql+pymysql://root:123456@47.100.50.208:3307/doubleSelect" --tables teacher, student, activity, comm, group, leader, account_pass --outfile "info/models.py"  --flask
     # 数据库的配置信息
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@47.100.50.208:3307/doubleSelect?charset=utf8"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
