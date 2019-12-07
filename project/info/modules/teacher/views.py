@@ -89,23 +89,90 @@ def index2():
     return jsonify(studentWithHosity)
 
 
-# TODO 未完成
-@index_blu.route('/student/GroStudent', methods=["POST"])
+@index_blu.route(DOUBLE+'/student/GroStudent', methods=["POST"])
 def GroStudent():
     """
     展示小组的学生
-    :param gid:
-    :return: students sid name className
+    :return: students, sid, name, className
     """
-    gid = request.args.get("gid")
-    # if
-    index_blu.Student.query.all()
+    # 1. 获取参数
+    gid_data = request.args.get("gid")
+    # 2. 检验参数是否合法
+    if not re.match('[1-9]\d*', gid_data):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
+    # 3. 查询对应的小组
+    try:
+        group = models.Group.query.get(gid_data).first()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+    # 4. 提取数据
+    if not group:
+        return jsonify(errno=RET.NODATA, errmsg="查询学习小组不存在！")
 
-    # group = index_blu.Group.query.filter_by(id=gid).first()
-    # if not group:
-    #     # return("没有对应的小组")
-    #     return jsonfiy("error_code":1)
-    # else:
-    #     students = [student for student in index_blu.Student.query.all()]
-    #     return jsonfiy({"error_code" : 0,"data":{students}})
-    #
+    try:
+        students = [student for student in index_blu.Student.query.all()]
+        student_data = []
+        for student in students:
+            data = {
+                "sid": student.sid,
+                "name": student.name,
+                "className": student.class_name
+            }
+            student_data.append(data)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+
+    msg = {"error_code": 0, "data": {"students": student_data}}
+
+    return jsonify(msg)
+
+
+@index_blu.route(DOUBLE+'/student/TeaStudent', methods=["POST"])
+def TeaStudent():
+    """
+    展示导师的学生
+    :return:students, sid, name, className
+    """
+    # 1. 获取相应数据
+    tid_data = request.args.get("tid")
+
+    # 2. 检验参数是否合法
+    if not re.match('[1-9]\d*', tid_data):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
+
+    try:
+        teacher = models.Teacher.query.get(tid_data).first()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+
+    if not teacher:
+        return jsonify(errno=RET.NODATA, errmsg="查询的老师不存在！")
+
+    # 查询对应学生
+    try:
+        students = models.Student.query.filter_by(tid="tid_data").all()
+        data_list = list()
+        for student in students:
+            student_data = {
+                "sid": student.sid,
+                "name": student.name,
+                "groupId": student.group_id,
+                "zid": student.zid,
+                "className": student.class_name,
+                "tid": student.tid
+            }
+            data_list.append(student_data)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+
+    return jsonify(data_list)
+
+
+
+
+
+
