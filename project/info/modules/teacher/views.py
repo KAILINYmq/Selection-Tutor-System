@@ -5,9 +5,10 @@ from flask.json import jsonify
 from info.untils.response_code import RET
 import re
 
+from info.untils.Jiekou import DOUBLE
 
 # /teacher/ownInfo?tid=1
-@index_blu.route('/teacher/ownInfo/')
+@index_blu.route(DOUBLE+'/teacher/ownInfo/')
 def index1():
     """
     导师查询个人信息
@@ -40,7 +41,7 @@ def index1():
     return jsonify(data)
 
 
-@index_blu.route('/student/query/student-history', methods=["POST"])
+@index_blu.route(DOUBLE+'/student/query/student-history', methods=["POST"])
 def index2():
     """
     查询申请的学生信息、历史导师信息、历史兴趣小组信息
@@ -54,14 +55,38 @@ def index2():
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 3.查询数据
-    # try:
-    #     teacher = models.Teacher.query.get(tid_data)
-    # except Exception as e:
-    #     current_app.logger.error(e)
-    #     return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+    try:
+        student = models.Student.query.get(sid)
+        student_account = models.AccountPas.query.filter(zid=student.zid)
+        student_teacher = models.Teacher.query.filter(tid=student.tid)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
 
+    # 4. 合并数据
+    studentWithHosity = {
+        "studentWithHosity": [
 
-    return "OK"
+        ],
+        "historyGroup": [
+
+        ],
+        "studentInfo": {
+            "sid": student.sid,
+            "name": student.name,
+            "groupId": student.group_id,
+            "zid": student.zid,
+            "className": student.class_name,
+            "tid": student.tid,
+            # "account": student_account.account,
+            "teacherName": student_teacher.name,
+            "email": student_teacher.email,
+            "introduction": student_teacher.introduction,
+            "major": student_teacher.major,
+        }
+    }
+
+    return jsonify(studentWithHosity)
 
 
 # TODO 未完成
