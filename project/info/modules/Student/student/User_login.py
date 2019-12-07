@@ -1,7 +1,6 @@
 from info.models import AccountPas,Student,Teacher,Group,Comm
 from info.modules.Student.student import index_blu_student
 from flask import request, jsonify
-from info.untils.response_code import RET
 from datetime import datetime
 from info import db
 from info.untils.Jiekou import DOUBLE
