@@ -27,4 +27,6 @@ def MyTeacher():
         "zid": teacher.zid,
     }
     print(student)
+    for i in student:
+        pass
     return jsonify(json_dict)
