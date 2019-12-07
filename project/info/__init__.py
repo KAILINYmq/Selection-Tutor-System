@@ -37,5 +37,7 @@ def create_app(config_name):
     app.register_blueprint(index_blu)
     from info.modules.Student.Teacher import index_blu_student_teacher
     app.register_blueprint(index_blu_student_teacher)
+    from info.modules.Student.student import index_blu_student
+    app.register_blueprint(index_blu_student_teacher)
 
     return app
