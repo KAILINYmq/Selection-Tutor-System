@@ -1,0 +1,923 @@
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:03:05] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:03:05] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:03:06] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:07:18] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:08:06] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:08:42] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:08:56] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:08:57] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:08:58] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:08:59] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:09:04] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:09:04] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:15] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:25] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:26] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:42] "POST / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:46] "POST /double_select/account/login?status=2&account=123123&password=123123 HTTP/1.1" 404 -
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:58] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:11:05] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:11:09] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:11:21] "GET /index HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:11:25] "GET /index1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:11:56] "POST /double_select/account/teacher/MyTeacher?tid=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:12:29] "POST /double_select/teacher/MyTeacher?tid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:12:31] "POST /double_select/teacher/MyTeacher?tid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:13:26] "POST /double_select/account/login?status=2 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:13:34] "POST /double_select/account/login?status=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:13:43] "POST /double_select/account/login?status=2 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:14:22] "POST /double_select/account/login?status=2&account=123456&password=123456 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:14:24] "POST /double_select/account/login?status=2&account=123456&password=123456 HTTP/1.1" 404 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\__init__.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:15:14] "POST /double_select/account/login?status=2&account=123456&password=123456 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:15:55] "POST /double_select/account/login?account=123456 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:16:48] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:17:08] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:17:11] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:17:15] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:17:46] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:17:54] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:17:57] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:18:36] "POST /double_select/student/info?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:20:26] "POST /double_select/account/login?password=123456&account=123456&status=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:20:50] "POST /double_select/account/login?password=123456&account=123456&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:20:53] "POST /double_select/account/login?password=123456&account=123456&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:20:57] "POST /double_select/account/login?password=123456&account=123456&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:21:09] "POST /double_select/account/login?password=123456&account=123456&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:21:18] "POST /double_select/account/login?password=123456&account=123456&status=3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:21:26] "POST /double_select/account/login?password=123456&account=123456&status=3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:21:32] "POST /double_select/account/login?password=123456&account=123456&status=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:23:32] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:23:33] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:28:25] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:29:38] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:30:51] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:31:16] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:31:21] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:31:35] "POST /double_select/account/login?password=12345&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:31:39] "POST /double_select/account/login?password=123456&account=2017074412&status=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:32:06] "POST /double_select/account/login?password=123456&account=2017074412&status=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:32:55] "POST /double_select/account/login?password=1234567&account=2017074412&status=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:33:02] "POST /double_select/account/login?password=123456&account=20170744122&status=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:33:10] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:33:32] "POST /double_select/account/login?password=123456&account=2017074412&status=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:35:05] "POST /double_select/account/login?password=123456&account=2017074412&status=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:36:14] "POST /double_select/account/login?password=123456&account=2017074412&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:36:23] "POST /double_select/account/login?password=123456&account=20170744123&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:36:30] "POST /double_select/account/login?password=123456&account=20170744123&status=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:36:40] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:37:54] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:42:18] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:43:01] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:43:05] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:43:41] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:44:30] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:44:35] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:45:16] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:47:06] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:47:09] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:47:14] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:00] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:09] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:12] "POST /double_select/account/login?password=123455&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:16] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:17] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:18] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:18] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:19] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:19] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:39] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:40] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:48:41] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:49:06] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:49:09] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:49:14] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:49:53] "POST /double_select/account/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:49:54] "POST /double_select/account/login HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:49:58] "POST /double_select/account/login?password=123456 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:50:02] "POST /double_select/account/login?password=123456&account=20170744123&=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:50:35] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:50:46] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:50:49] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:50:55] "POST /double_select/student/info?sid=3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:51:50] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:52:06] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:52:29] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:52:32] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:52:35] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:52:55] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:52:57] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:28] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:30] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:32] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:51] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:54] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:55] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:53:56] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:54:22] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:54:43] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:54:45] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:54:46] "POST /double_select/student/info?sid=5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:54:52] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:55:29] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:55:36] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:56:05] "POST /double_select/account/login?account=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:56:11] "POST /double_select/account/login?account=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:56:13] "POST /double_select/account/login?account=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:56:43] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:56:51] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:58:11] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:58:12] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:58:40] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:58:41] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:59:40] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:59:58] "POST /double_select/account/login?account=123123&status=2&password=12312 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:07] "POST /double_select/account/login?account=123123&status=2&password= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:19] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:22] "POST /double_select/account/login?account=123123&status=2&password=12312 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:26] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:30] "POST /double_select/account/login?account=123123&status=1&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:36] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:50] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:54] "POST /double_select/account/login?account=12312&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:00:57] "POST /double_select/account/login?account=1231&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:01:01] "POST /double_select/account/login?account=123123&status=2&password=123123 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:01:03] "POST /double_select/account/login?account=123123&status=2&password=12312 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:01:06] "POST /double_select/account/login?account=123123&status=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:03:02] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:03:25] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:05:33] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:05:59] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:06:04] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:06:53] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:07:16] "POST /double_select/student/info?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:07:36] "POST /double_select/student/info?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:08:55] "POST /double_select/student/info?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:08:58] "POST /double_select/student/info?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:09:14] "POST /double_select/student/info?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:11:05] "POST /double_select/student/exit/group?sid=2&gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:11:25] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:12:36] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:12:43] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:03] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:04] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:05] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:06] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:50] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:54] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:13:57] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:15:30] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:15:32] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:15:44] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:15:46] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:15:48] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:16:00] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:16:01] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:18:19] "POST /double_select/student/exit/group?sid=3&gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:18:43] "POST /double_select/student/exit/group?sid=0&gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:18:54] "POST /double_select/student/exit/group?sid=4&gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:18:56] "POST /double_select/student/exit/group?sid=4&gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:19:38] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:20:03] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:20:10] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:21:43] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:23:12] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:26:57] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:29:36] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:32:02] "POST /double_select/student/info?sid=2 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:32:19] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:33:34] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:35:16] "POST /double_select/student/info?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:37:00] "POST /double_select/student/info?sid=3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:37:10] "POST /double_select/student/info?sid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:38:07] "POST /double_select/group/query-one?gid=1 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:38:30] "POST /double_select/group/query-one?gid=1 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:38:36] "POST /double_select/group/query-one?gid=2 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:38:48] "POST /double_select/group/query-one?gid=2 HTTP/1.1" 405 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:38:52] "POST /double_select/group/query-one?gid=2 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:38:53] "POST /double_select/group/query-one?gid=2 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:39:06] "GET /double_select/group/query-one?gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:39:09] "GET /double_select/group/query-one?gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:39:22] "GET /double_select/group/query-one?gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:40:19] "GET /double_select/group/query-one?gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:40:24] "GET /double_select/group/query-one?gid=2 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:41:06] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:41:15] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:41:17] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:41:29] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:41:58] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:42:16] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:42:19] "POST /double_select/comm/list HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:45:02] "POST /double_select/comm/list HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:45:07] "POST /double_select/comm/list HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:45:34] "POST /double_select/comm/list HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:45:37] "POST /double_select/comm/list HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:45:41] "POST /double_select/comm/list HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:46:13] "POST /double_select/comm/list HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:49:13] "POST /double_select/comm/save?sid=1&title=ffffff HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:50:01] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:51:03] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:51:06] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:51:10] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:51:22] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:51:31] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:02] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:05] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:42] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:43] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:44] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:55] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:52:59] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:53:00] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:54:32] "POST /double_select/comm/save?sid=1&title=ffffff&content=5555555555555555555 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:54:51] "POST /double_select/comm/save?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:54:59] "POST /double_select/comm/save?sid=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:56:39] "POST /double_select/comm/query-one HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:56:48] "POST /double_select/comm/query-one HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:56:51] "POST /double_select/comm/query-one HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:56:52] "POST /double_select/comm/query-one HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:58:17] "POST /double_select/comm/query-one HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:58:21] "POST /double_select/comm/query-one HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:58:55] "POST /double_select/comm/query-one HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:58:59] "POST /double_select/comm/query-one HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:59:13] "POST /double_select/comm/query-one?hid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:59:16] "POST /double_select/comm/query-one?hid=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:59:45] "POST /double_select/comm/query-one?hid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:59:50] "POST /double_select/comm/query-one?hid=2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 10:59:55] "POST /double_select/comm/query-one?hid=3 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:00:47] "POST /double_select/comm/query-one?hid=3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:00:52] "POST /double_select/comm/query-one?hid=3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:02:23] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:03:45] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:03:51] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:04:33] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:04:36] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:04:54] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:08:42] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:09:14] "POST /double_select/comm/save?sid=3&title=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E8%80%81%E5%96%BD%E6%AF%94&content=%E6%9D%8E%E5%AE%B6%E5%9D%A4%E7%9C%9F%E5%96%BD HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:14:01] "GET /double_select/group/query-one?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:15:28] "GET /double_select/group/query-one?gid=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:17:21] "GET /double_select/group/query-one?gid=1 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:17:31] "GET /double_select/group/query-one?gid=1 HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:17:36] "GET /double_select/group/query-one?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:18:58] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:19:09] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:19:17] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:19:24] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:20:22] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:20:26] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:21:03] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:23:39] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:23:41] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:24:02] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:24:05] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:24:55] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:24:58] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:25:07] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:25:10] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:25:54] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:25:57] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:26:01] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:26:41] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:26:59] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:27:43] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:28:31] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:31:38] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:31:42] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:35:12] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:36:26] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:36:30] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:37:56] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:40:25] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:41:10] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:41:13] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:44:08] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:44:12] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:44:59] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:45:33] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:45:34] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:46:59] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:48:05] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:48:09] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:49:38] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:51:18] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:51:21] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 11:56:10] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 12:03:28] "GET /double_select/group/query-all HTTP/1.1" 500 -
+INFO _internal.py:88  * Detected change in 'G:\\WDNMD\\project\\info\\modules\\Student\\student\\User_login.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 186-183-979
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 12:04:04] "GET /double_select/group/query-all HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 12:05:20] "GET /double_select/student/info?sid=2 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 12:05:26] "GET /double_select/student/info?sid=2 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 12:05:31] "GET /double_select/student/info?sid=3 HTTP/1.1" 405 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 12:05:40] "POST /double_select/student/info?sid=3 HTTP/1.1" 200 -
