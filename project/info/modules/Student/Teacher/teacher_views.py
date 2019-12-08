@@ -4,6 +4,7 @@ from info.modules.Student.Teacher import index_blu_student_teacher
 from flask import request, jsonify
 from info.untils.Jiekou import DOUBLE
 from datetime import datetime
+import re
 
 # 退出导师申请
 @index_blu_student_teacher.route(DOUBLE+'/activity/applying/outteacher', methods=['POST'])
@@ -14,6 +15,9 @@ def ExitTeacher():
     :return: 1 or 2
     """
     sid = request.args.get('sid')
+    sid = re.findall(r'\d+', sid)
+    if sid == list():
+        return jsonify('参数404')
     try:
         activity = Activity.query.filter_by(sid=sid).all()
         for i in activity:
@@ -36,6 +40,9 @@ def MyTeacherteam():
     :return: tid, name, email, introduction, major, groupId, zid, [sid, name, groupId, zid, classname, tid]
     """
     tid = request.args.get('tid')
+    tid = re.findall(r'\d+', tid)
+    if tid == list():
+        return jsonify('参数404')
     try:
         teacher = Teacher.query.get(tid)
         student = Student.query.filter(Student.tid == tid).all()
@@ -67,12 +74,15 @@ def MyTeacherteam():
 def ApplyTeacher():
     """
     提交导师申请
-    :param currentTid: tid:老师id, sid:学生id, Date:日期
+    :param currentTid: tid:老师id, sid:学生id
     :return: data[status]
     """
     tid = request.args.get('tid')
     sid = request.args.get('sid')
-    Date = request.args.get('Date')
+    tid = re.findall(r'\d+', tid)
+    sid = re.findall(r'\d+', sid)
+    if tid == list() or sid == list():
+        return jsonify('参数404')
     json_dict = {
         'data': {
             'status': 21
@@ -83,7 +93,8 @@ def ApplyTeacher():
         for i in activity:
             if i.status == 21:
                 return jsonify(json_dict)
-        activity_add = Activity(sid=sid, tid=tid, status=21, a_time=Date, is_delete=1)
+        activity_add = \
+            Activity(sid=sid, tid=tid, status=21, a_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'), is_delete=1)
         db.session.add(activity_add)
         db.session.commit()
     except Exception as e:
@@ -101,6 +112,10 @@ def TeacherMessage():
     """
     tid = request.args.get('tid')
     sid = request.args.get('sid')
+    tid = re.findall(r'\d+', tid)
+    sid = re.findall(r'\d+', sid)
+    if tid == list() or sid == list():
+        return jsonify('参数404')
     ApplicationStatus = 3
     try:
         teacher = Teacher.query.get(tid)
@@ -135,16 +150,23 @@ def ChoiceTeacher():
     :return: teacher, tid, tname, status
     """
     sid = request.args.get('sid')
-    teacher = Teacher.query.all()
+    sid = re.findall(r'\d+', sid)
+    if sid == list():
+        return jsonify('参数404')
 
-    def status_select(i):
-        ApplicationStatus = 3
-        if Student.query.filter(Student.tid == i.tid).count() < 10:
-            ApplicationStatus = 1
-        for i in Activity.query.filter(Activity.tid == i.tid, Activity.sid == sid).all():
-            if i.status == 21:
-                ApplicationStatus = 2
-        return ApplicationStatus
+    try:
+        teacher = Teacher.query.all()
+
+        def status_select(i):
+            ApplicationStatus = 3
+            if Student.query.filter(Student.tid == i.tid).count() < 10:
+                ApplicationStatus = 1
+            for i in Activity.query.filter(Activity.tid == i.tid, Activity.sid == sid).all():
+                if i.status == 21:
+                    ApplicationStatus = 2
+            return ApplicationStatus
+    except Exception as e:
+        return jsonify('操作失败404')
 
     return jsonify({
         'teacher': [
