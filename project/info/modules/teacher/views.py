@@ -7,6 +7,7 @@ import re
 from datetime import *
 import time
 
+from info import db
 from info.untils.Jiekou import DOUBLE
 
 # /teacher/ownInfo?tid=1
