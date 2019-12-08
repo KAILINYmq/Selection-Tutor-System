@@ -8,10 +8,11 @@ from datetime import *
 import time
 from info import db
 
+from info import db
 from info.untils.Jiekou import DOUBLE
 
-# /teacher/ownInfo?tid=1
-@index_blu.route(DOUBLE+'/teacher/ownInfo/')
+# /double_select/teacher/ownInfo?tid=1
+@index_blu.route(DOUBLE+'/teacher/ownInfo')
 def index1():
     """
     导师查询个人信息
@@ -43,7 +44,7 @@ def index1():
 
     return jsonify(data)
 
-
+# /double_select/student/query/student-history
 @index_blu.route(DOUBLE+'/student/query/student-history', methods=["POST"])
 def index2():
     """
@@ -145,7 +146,7 @@ def index2():
     return jsonify(studentWithHosity=studentWithHosity)
 
 
-#/activity/query/undomsg?tid=2&type=1
+# /double_select/activity/query/undomsg?tid=2&type=1
 @index_blu.route(DOUBLE+'/activity/query/undomsg')
 def index3():
     """
@@ -183,6 +184,7 @@ def index3():
 
     return jsonify(news_dict_li)
 
+# /double_select/activity/applying/group
 @index_blu.route(DOUBLE+'/activity/applying/group', methods=["POST"])
 def index4():
     """
@@ -224,7 +226,7 @@ def index4():
     # 4.返回数据
     return jsonify(data)
 
-
+# /double_select/comm/save
 @index_blu.route(DOUBLE+'/comm/save', methods=["POST"])
 def index5():
     """
