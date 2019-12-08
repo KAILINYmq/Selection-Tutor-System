@@ -1,0 +1,216 @@
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:01:15] "GET / HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:01:15] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:01:22] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:01:25] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:03:09] "POST /double_select//student/GroStudent?gid=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:03:44] "POST /double_select//student/GroStudent?gid=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:03:56] "POST /double_select//student/GroStudent/?gid=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:04:03] "POST /double_select//student/GroStudent/?gid=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:04:07] "POST /double_select/student/GroStudent/?gid=1 HTTP/1.1" 404 -
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:04:13] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:04:23] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:06:08] "GET / HTTP/1.1" 404 -
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:06:21] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:06:54] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:305 'Blueprint' object has no attribute 'Student'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:07:11] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:07:49] "POST /double_select/student/GroStudent?gid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:09:55] "POST /double_select/student/TeaStudent?tid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:10:34] "POST /double_select/student/TeaStudent?tid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:387 type object 'AccountPas' has no attribute 'get'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:12:40] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+ERROR views.py:387 type object 'AccountPas' has no attribute 'get'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:12:47] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:387 type object 'AccountPas' has no attribute 'get'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:13:13] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:14:47] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:15:35] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:16:13] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:16:33] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:20:12] "POST /double_select/student/queryStuAndHistoryTea?sid=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:23:50] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:457 get() got an unexpected keyword argument 'id'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:26:01] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:457 get() got an unexpected keyword argument 'id'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:26:10] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:457 get() got an unexpected keyword argument 'id'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:28:36] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:457 get() got an unexpected keyword argument 'id'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:29:35] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:458 get() got an unexpected keyword argument 'id'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:29:54] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:458 get() got an unexpected keyword argument 'sid'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:30:21] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:458 'isdelete' is an invalid keyword argument for Activity
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:31:27] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:31:47] "POST /double_select/activity/applying/teacher?sid=1&tid=1&status=23 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR views.py:488 get() got an unexpected keyword argument 'id'
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:33:32] "POST /double_select/activity/handle/quitteacher?sid=1&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [08/Dec/2019 09:34:08] "POST /double_select/activity/handle/quitteacher?sid=1&status=1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in 'D:\\PyCharm\\WDNMD\\project\\info\\modules\\teacher\\views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 142-378-447
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

@@ -6,6 +6,7 @@ from info.untils.response_code import RET
 import re
 from datetime import *
 import time
+from info import db
 
 from info.untils.Jiekou import DOUBLE
 
@@ -268,7 +269,7 @@ def index5():
 
 
 
-
+# TODO OK
 @index_blu.route(DOUBLE+'/student/GroStudent', methods=["POST"])
 def GroStudent():
     """
@@ -291,7 +292,7 @@ def GroStudent():
         return jsonify(errno=RET.NODATA, errmsg="查询学习小组不存在！")
 
     try:
-        students = [student for student in index_blu.Student.query.all()]
+        students = [student for student in models.Student.query.filter_by(group_id=gid_data).all()]
         student_data = []
         for student in students:
             data = {
@@ -302,7 +303,7 @@ def GroStudent():
             student_data.append(data)
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误2！")
 
     msg = {"error_code": 0, "data": {"students": student_data}}
 
@@ -334,7 +335,7 @@ def TeaStudent():
 
     # 4. 查询对应学生
     try:
-        students = models.Student.query.filter_by(tid="tid_data").all()
+        students = models.Student.query.filter_by(tid=tid_data).all()
         data_list = list()
         for student in students:
             student_data = {
@@ -369,7 +370,7 @@ def queryStuAndHistoryTea():
     # 3. 查询对应的学生
     try:
         student = models.Student.query.get(sid_data)
-        stu_account_pass = models.AccountPas.get(student.zid)
+        stu_account_pass = models.AccountPas.query.get(student.zid)
         student_group = models.Group.query.get(student.group_id)
         stu_teacher = models.Teacher.query.get(student.tid)
         student_data = {
@@ -382,11 +383,11 @@ def queryStuAndHistoryTea():
             }
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误2！")
 
     # 3. 查询对应的历史导师
     try:
-        act_list = models.Activity.query.filter_by(sid="student.sid").all()
+        act_list = models.Activity.query.filter_by(sid=student.sid).all()
         his_teacher = list()
         for act in act_list:
             if act.status == 22 or act.status == 25:
@@ -401,8 +402,9 @@ def queryStuAndHistoryTea():
 
         teachers = list()
         for i in group_acts:
-            # import datatime
+            teacher = models.Teacher.query.get(i[0].tid)
             data = {
+                "teaName": teacher.name,
                 "startTime": i[0].a_time.strftime("%Y-%m-%d"),
                 "endTime": i[1].a_time.strftime("%Y-%m-%d")
             }
@@ -438,20 +440,19 @@ def Teacher():
 
     # 3. 查询对应处理的状态
     try:
+        student = models.Student.query.get(sid_data)
+        dt = datetime.now()
+        active = models.Activity(sid=sid_data, tid=tid_data, group_id=student.group_id,
+                             status=status_data, a_time=dt)
+        db.session.add(active)
+        db.session.commit()
         if status_data == "22":
-            student = models.Student.query.get(id=sid_data)
-            dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            active = models.Activity(sid=sid_data, tid=tid_data,group_id=student.group_id,
-                                 status=status_data, a_time=dt,isdelete=1)
-            index_blu.session.add(active)
-            index_blu.session.commit()
             isApply = True
         else:
             isApply = False
-
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误2！")
 
     data = {"isApply": isApply}
     return jsonify(data)
@@ -473,12 +474,12 @@ def Quitteacher():
     # 3. 根据参数对应操作
     try:
         if status_data == "1":
-            student = models.Student.query.get(id=sid_data)
-            dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            student = models.Student.query.get(sid_data)
+            dt = datetime.now()
             active = models.Activity(sid=sid_data,group_id=student.group_id,
-                                 status=status_data, a_time=dt, isdelete=1)
-            index_blu.session.add(active)
-            index_blu.session.commit()
+                                 status=status_data, a_time=dt)
+            db.session.add(active)
+            db.session.commit()
 
     except Exception as e:
         current_app.logger.error(e)
