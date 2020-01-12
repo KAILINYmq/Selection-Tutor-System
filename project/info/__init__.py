@@ -38,6 +38,6 @@ def create_app(config_name):
     from info.modules.Student.Teacher import index_blu_student_teacher
     app.register_blueprint(index_blu_student_teacher)
     from info.modules.Student.student import index_blu_student
-    app.register_blueprint(index_blu_student_teacher)
+    app.register_blueprint(index_blu_student)
 
     return app

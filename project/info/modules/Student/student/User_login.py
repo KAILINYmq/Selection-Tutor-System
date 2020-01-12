@@ -3,6 +3,7 @@ from info.modules.Student.student import index_blu_student
 from flask import request, jsonify
 from datetime import datetime
 from info import db
+from info.untils.response_code import RET
 from info.untils.Jiekou import DOUBLE
 
 #用户登录
@@ -17,22 +18,23 @@ def Users_login():
     account = request.args.get('account')
     password = request.args.get('password')
     try:
-        information = AccountPas.query.fillter(AccountPas.account == account).first()
+        information = AccountPas.query.filter(AccountPas.account == account).first()
+        if information == None:
+            return jsonify(errno=RET.USERERR,errmsg="用户不存在或未激活")
     except Exception as e:
-        return "查询失败!"
+        print(e)
+        return ('访问失败404')
     isLogin = {
         'isLogin': True
     }
-    isnotLogin = {
-        'siLofin':False
-    }
-    if information.status == status:
-        if information.password == password:
-            return jsonify(isLogin)
+    print(password)
+    if information.status == int(status):
+        if password is None or information.password != password:
+            return jsonify(errno=RET.PWDERR, errmsg="密码错误!")
         else:
-            return jsonify(isnotLogin)
+            return jsonify(isLogin)
     else:
-        return jsonify(isnotLogin)
+        return jsonify(errno=RET.ROLEERR,errmsg="用户身份错误!")
 
 #查询学生信息
 @index_blu_student.route(DOUBLE+'/student/info',methods=['POST'])
@@ -43,16 +45,17 @@ def Student_information():
     major,groupExtra[id, name, majorField, intro,], teacherList[tid, name, email, introduction,
     major, groupId, zid], [tid, name, email, introduction, major, groupId, zid]
     """
-
     sid = request.args.get('sid')
+
     try:
-        student_information = Student.query.fillter(Student.sid == sid).first()
-        teacher_information = Teacher.query.fillter(Teacher.tid == student_information.tid).first()
-        group_information = Group.query.fillter(Group.id == student_information.group.id).first()
-        account_information = AccountPas.query.fillter(AccountPas.zid == student_information.zid).first()
-        group_teacher_information = Teacher.query.fillter(Teacher.group_id == student_information.group_id).all()
+        student_information = Student.query.filter(Student.sid == sid).first()
+        teacher_information = Teacher.query.filter(Teacher.tid == student_information.tid).first()
+        group_information = Group.query.filter(Group.id == student_information.group_id).first()
+        account_information = AccountPas.query.filter(AccountPas.zid == student_information.zid).first()
+        group_teacher_information = Teacher.query.filter(Teacher.group_id == student_information.group_id).all()
     except Exception as e:
-        return "查询失败!"
+        print(e)
+        return jsonify(errno=RET.USERERR,errmsg="用户不存在或未激活")
 
     studentlnfo ={
         "sid": student_information.sid,
@@ -66,34 +69,30 @@ def Student_information():
         "email": teacher_information.email,
         "introduction": teacher_information.introduction,
         "major": teacher_information.major,
-    }
-    return jsonify({
-            "studentInfo":{
-                studentlnfo,
+        "groupExtra": {
+            "id": group_information.id,
+            "name": group_information.name,
+            "majorField": group_information.major_field,
+            "intro": group_information.intro,
+            "teacherList": [
                 {
-                    "groupExtra": {
-                        "id": group_information.id,
-                        "name": group_information.name,
-                        "majorField": group_information.major_field,
-                        "intro": group_information.intro,
-                        "teacherList": [
-                            {
-                                "tid": i.tid,
-                                "name": i.name,
-                                "email": i.email,
-                                "introduction": i.introduction,
-                                "major": i.major,
-                                "groupId": i.group_id,
-                                "zid": i.zid
-                            }for i in group_teacher_information
-                        ]
-                    }
-                }
-
-            }
+                    "tid": i.tid,
+                    "name": i.name,
+                    "email": i.email,
+                    "introduction": i.introduction,
+                    "major": i.major,
+                    "groupId": i.group_id,
+                    "zid": i.zid
+                } for i in group_teacher_information
+            ]
         }
+    }
+    # return jsonify(studentlnfo)
+    return jsonify({
+            "studentInfo":
+                studentlnfo,
 
-    )
+    } )
 
 #学生退组
 @index_blu_student.route(DOUBLE+'/student/exit/group',methods=['POST'])
@@ -104,20 +103,25 @@ def Student_withdrawal():
     """
     sid = request.args.get('sid')
     gid = request.args.get('gid')
-    try:
-        student_information = Student.query.fillter(Student.sid == sid).first()
-    except Exception as e:
-        return "查询失败!"
     isExit = {
         'isLogin': True
     }
     isnotExit = {
         'siLofin': False
     }
-    if student_information.group_id == gid:
+    try:
+        student_information = Student.query.filter(Student.sid == sid).first()
+        again_student_information = Student.query.filter(Student.group_id == gid).first()
+        if student_information == again_student_information:
+            student_information.group_id = 0
+            db.session.commit()
+        else:
+            return ("选择小组错误")
+    except Exception as e:
+        print(e)
+        db.session.rollback()
         return jsonify(isnotExit)
-    else:
-        return jsonify(isExit)
+    return jsonify(isExit)
 
 #查询单个小组信息
 @index_blu_student.route(DOUBLE+'/group/query-one',methods=['GET'])
@@ -128,33 +132,33 @@ def One_group_information():
     """
     gid = request.args.get('gid')
     try:
-        one_group_information = Group.query.fillter(Group.id == gid).first()
-        group_teacher = Teacher.query.fillter(group_id = gid).all()
+        one_group_information = Group.query.filter(Group.id == gid).first()
+        group_teacher = Teacher.query.filter(Teacher.group_id == gid).all()
     except Exception as e:
-        return "查询失败！"
+        print(e)
+        return jsonify(errno=RET.NODATA,errmsg="无数据!")
     groupInfo ={
     "id": one_group_information.id,
     "name": one_group_information.name,
     "majorField": one_group_information.major_field,
     "intro": one_group_information.intro,
-    }
-    return jsonify({
-        "groupInfo":{
-            groupInfo,
-            {
-                "teacherList": [
-                {
-                    "tid": i.tid,
-                    "name": i.name,
-                    "email": i.email,
-                    "introduction": i.introduction,
-                    "major": i.major,
-                    "groupId": i.group_id,
-                    "zid": i.zid
-                }] for i in group_teacher
-            }
+    "teacherList": [
+        {
+            "tid": i.tid,
+            "name": i.name,
+            "email": i.email,
+            "introduction": i.introduction,
+            "major": i.major,
+            "groupId": i.group_id,
+            "zid": i.zid
+        }for i in group_teacher]
 
-        }
+    }
+
+    return jsonify({
+        "groupInfo":
+            groupInfo,
+
     }
 
     )
@@ -166,6 +170,20 @@ def Group_information():
     :param
     :return:  groupData, id, name, majorField, intro, teacherList[]
     """
+    group_teacher_information = []
+    try:
+        group_information = Group.query.filter(Group.id != 0).all()
+        print(group_information)
+        for i in group_information:
+            if Teacher.query.filter(i.id == Teacher.group_id).all() != list():
+                group_teacher_information.append(Teacher.query.filter(i.id == Teacher.group_id).all())
+                print(group_teacher_information)
+    except Exception as e:
+        print(e)
+        return jsonify(errno=RET.DBERR,errmsg="数据库查询错误!")
+    for b in group_teacher_information:
+        for a in b:
+            print(a.tid)
     return jsonify({
             "groupData":[
                 {
@@ -182,10 +200,10 @@ def Group_information():
                             "major": a.major,
                             "groupId": a.group_id,
                             "zid": a.zid
-                        }for a in Teacher
+                        }for b in group_teacher_information for a in b if a.group_id == i.id
                     ]
 
-                }for i in Group
+                }for i in group_information
             ]
         }
     )
@@ -197,16 +215,22 @@ def Meeting_minutes():
     :param
     :return:  commList[hid, zid, tid, time, content, title]
     """
+    try:
+        comm_information = Comm.query.filter(Comm.hid ).all()
+        print(comm_information)
+    except Exception as e:
+        print(e)
+        return jsonify(errno=RET.DBERR,errmsg="数据库查询错误!")
     return jsonify({
             'commList':[
                 {
                 "hid": i.hid,
-                "zid": i.zid,
+                "sid": i.sid,
                 "tid": i.tid,
                 "time": i.time,
                 "content":i.content,
                 "title": i.title
-                } for i in Comm
+                } for i in comm_information
           ]
         })
 
@@ -221,10 +245,11 @@ def Student_meetings():
     title = request.args.get('title')
     content = request.args.get('content')
     try:
-        student_meeting_minutes = Comm(sid=sid,title=title,content=content,time=datetime.now().strftime('%Y-%m-%d %H:%M:%S %f'))
+        student_meeting_minutes = Comm(sid=sid,title=title,content=content,time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         db.session.add(student_meeting_minutes)
         db.session.commit()
     except Exception as e:
+        print(e)
         db.session.rollback()
         return jsonify({
             "isSuccess":False
@@ -240,16 +265,18 @@ def One_meeting_minutes():
     :param  cid:会议记录id
     :return:  comm[hid, zid, tid, time, content, title]
     """
-    cid = request.args.get('cid')
+    hid = request.args.get('hid')
     try:
-        meeting_minutes = Comm.query.fillter(Comm.cid == cid).first()
+        meeting_minutes = Comm.query.filter(Comm.hid == hid).first()
+        if Comm.hid != hid:
+            return ("没有此条数据")
     except Exception as e:
-        return jsonify("查询失败")
+        return jsonify(errno=RET.DBERR,errmsg="数据库查询错误!")
     return jsonify(
         {
             "comm":{
                 "hid": meeting_minutes.hid,
-                "zid": meeting_minutes.zid,
+                "sid": meeting_minutes.sid,
                 "tid": meeting_minutes.tid,
                 "time": meeting_minutes.time,
                 "content": meeting_minutes.content,

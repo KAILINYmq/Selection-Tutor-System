@@ -6,7 +6,6 @@ from info.untils.response_code import RET
 import re
 from datetime import *
 import time
-import json
 
 from info import db
 from info.untils.Jiekou import DOUBLE
@@ -160,7 +159,7 @@ def index3():
     # 1.验证数据
     if not re.match('[1-9]\d*', tid_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
-    if not re.match('[0-9]\d*', type_data):
+    if not re.match('[1-9]\d*', type_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 2.查询数据
@@ -179,8 +178,7 @@ def index3():
             "disposeId": 2,
             "disposePerson": "王老师",
             "type": news_item.status,
-            # TODO
-            "data": str(news_item.a_time)
+            "data": news_item.a_time
             })
 
     return jsonify(news_dict_li)
@@ -280,7 +278,7 @@ def GroStudent():
     :return: students, sid, name, className
     """
     # 1. 获取参数
-    gid_data = request.form.get("gid")
+    gid_data = request.args.get("gid")
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', gid_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
@@ -320,7 +318,7 @@ def TeaStudent():
     :return:students, sid, name, className
     """
     # 1. 获取相应数据
-    tid_data = request.form.get("tid")
+    tid_data = request.args.get("tid")
 
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', tid_data):
@@ -338,8 +336,7 @@ def TeaStudent():
 
     # 4. 查询对应学生
     try:
-        # students = models.Student.query.filter_by(tid="tid_data").all()
-        students = models.Student.query.filter_by(tid=tid_data)
+        students = models.Student.query.filter_by(tid="tid_data").all()
         data_list = list()
         for student in students:
             student_data = {
@@ -365,7 +362,7 @@ def queryStuAndHistoryTea():
     :return:groupid
     """
     # 1. 获取相应数据
-    sid_data = request.form.get("sid")
+    sid_data = request.args.get("sid")
 
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', sid_data):
@@ -433,20 +430,19 @@ def Teacher():
     :return:isApply
     """
     # 1. 提取数据
-    sid_data = request.form.get("sid")
-    tid_data = request.form.get("tid")
-    status_data = request.form.get("status")
+    sid_data = request.args.get("sid")
+    tid_data = request.args.get("tid")
+    status_data = request.args.get("status")
     # 2. 检验参数是否合法
-    if (not re.match('^[1-9]\d*', sid_data)) or (not re.match('^[0-9]*$', tid_data)) or (
+    if (not re.match('^[0-9]*$', sid_data)) or (not re.match('^[0-9]*$', tid_data)) or (
         not re.match('^[0-9]*$', status_data) or (status_data != "22" and status_data != "23")):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 3. 查询对应处理的状态
     try:
         if status_data == "22":
-            student = models.Student.query.get(sid=sid_data)
-            # dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            dt = int(time.mktime(datetime.now().timetuple()))
+            student = models.Student.query.get(id=sid_data)
+            dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             active = models.Activity(sid=sid_data, tid=tid_data,group_id=student.group_id,
                                  status=status_data, a_time=dt,isdelete=1)
             index_blu.session.add(active)
@@ -470,17 +466,16 @@ def Quitteacher():
     :return:1 or 2
     """
     # 1. 提取数据
-    sid_data = request.form.get("sid")
-    status_data = request.form.get("status")
-    print(sid_data)
-    # TODO
+    sid_data = request.args.get("sid")
+    status_data = request.args.get("status")
     # 2. 检验参数是否合法
-    if (not re.match('^[1-9]\d*', sid_data)) or (status_data != "1" and status_data != "2"):
+    if (not re.match('^[0-9]*$', sid_data)) or (status_data != "1" and status_data != "2"):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
+
     # 3. 根据参数对应操作
     try:
         if status_data == "1":
-            student = models.Student.query.get(sid=sid_data)
+            student = models.Student.query.get(id=sid_data)
             dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             active = models.Activity(sid=sid_data,group_id=student.group_id,
                                  status=status_data, a_time=dt, isdelete=1)
