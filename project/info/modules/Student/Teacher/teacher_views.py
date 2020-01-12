@@ -14,7 +14,7 @@ def ExitTeacher():
     :param sid: 学生ID
     :return: 1 or 2
     """
-    sid = request.args.get('sid')
+    sid = request.form.get('sid')
     sid = re.findall(r'\d+', sid)
     if sid == list():
         return jsonify('参数404')
@@ -39,7 +39,7 @@ def MyTeacherteam():
     :param tid: 老师ID
     :return: tid, name, email, introduction, major, groupId, zid, [sid, name, groupId, zid, classname, tid]
     """
-    tid = request.args.get('tid')
+    tid = request.form.get('tid')
     tid = re.findall(r'\d+', tid)
     if tid == list():
         return jsonify('参数404')
@@ -77,8 +77,8 @@ def ApplyTeacher():
     :param currentTid: tid:老师id, sid:学生id
     :return: data[status]
     """
-    tid = request.args.get('tid')
-    sid = request.args.get('sid')
+    tid = request.form.get('tid')
+    sid = request.form.get('sid')
     tid = re.findall(r'\d+', tid)
     sid = re.findall(r'\d+', sid)
     if tid == list() or sid == list():
@@ -110,8 +110,8 @@ def TeacherMessage():
     :param tid:老师id, sid:学生id
     :return: tid, name, major, email, memebers, ApplicationStatus
     """
-    tid = request.args.get('tid')
-    sid = request.args.get('sid')
+    tid = request.form.get('tid')
+    sid = request.form.get('sid')
     tid = re.findall(r'\d+', tid)
     sid = re.findall(r'\d+', sid)
     if tid == list() or sid == list():
@@ -149,7 +149,7 @@ def ChoiceTeacher():
     :param sid:学生id
     :return: teacher, tid, tname, status
     """
-    sid = request.args.get('sid')
+    sid = request.form.get('sid')
     sid = re.findall(r'\d+', sid)
     if sid == list():
         return jsonify('参数404')

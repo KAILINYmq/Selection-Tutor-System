@@ -230,44 +230,70 @@ def index4():
 @index_blu.route(DOUBLE+'/comm/save', methods=["POST"])
 def index5():
     """
-    学生提交提交会议记录接口
+    学生or导师提交提交会议记录接口
     :return:
     """
     # 1.获取参数
+    sid = request.form.get("sid")
     tid = request.form.get("tid")
     title = request.form.get("title")
     content = request.form.get("content")
 
     # 2.校验参数
-    if not re.match('[1-9]\d*', tid):
-        return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
     if title is "":
         return jsonify(errno=RET.PARAMERR, errmsg="参数不能为空！")
     elif content is "":
         return jsonify(errno=RET.PARAMERR, errmsg="参数不能为空！")
 
-    # 3.操作数据
-    comm = models.Comm()
-    comm.tid = tid
-    comm.title = title
-    comm.time = int(time.mktime(datetime.now().timetuple()))
-    comm.content = content
+    if sid != None:
+        if not re.match('[1-9]\d*', sid):
+            return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
+        # 3.操作数据
+        comm = models.Comm()
+        comm.sid = sid
+        comm.title = title
+        comm.time = int(time.mktime(datetime.now().timetuple()))
+        comm.content = content
 
-    try:
-        db.session.add(comm)
-        db.session.commit()
-        isSuccess = True
-    except Exception as e:
-        db.session.rollback()
-        current_app.logger.error(e)
-        isSuccess = False
+        try:
+            db.session.add(comm)
+            db.session.commit()
+            isSuccess = True
+        except Exception as e:
+            db.session.rollback()
+            current_app.logger.error(e)
+            isSuccess = False
 
-    data = {
-        "isSuccess": isSuccess
-    }
-    # 4.返回数据
-    return jsonify(data)
+        data = {
+            "isSuccess": isSuccess
+        }
+        # 4.返回数据
+        return jsonify(data)
+    else:
+        if not re.match('[1-9]\d*', tid):
+            return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
+        # 3.操作数据
+        comm = models.Comm()
+        comm.tid = tid
+        comm.title = title
+        comm.time = int(time.mktime(datetime.now().timetuple()))
+        comm.content = content
+
+        try:
+            db.session.add(comm)
+            db.session.commit()
+            isSuccess = True
+        except Exception as e:
+            db.session.rollback()
+            current_app.logger.error(e)
+            isSuccess = False
+
+        data = {
+            "isSuccess": isSuccess
+        }
+        # 4.返回数据
+        return jsonify(data)
 
 
 

@@ -1,7 +1,6 @@
 from info.models import AccountPas,Student,Teacher,Group,Comm
 from info.modules.Student.student import index_blu_student
 from flask import request, jsonify
-from datetime import datetime
 from info import db
 from info.untils.response_code import RET
 from info.untils.Jiekou import DOUBLE
@@ -14,20 +13,18 @@ def Users_login():
     :param  status: 状态,  account:账号， password:密码
     :return: true&false
     """
-    status = request.args.get('status')
-    account = request.args.get('account')
-    password = request.args.get('password')
+    status = request.form.get('status')
+    account = request.form.get('account')
+    password = request.form.get('password')
     try:
         information = AccountPas.query.filter(AccountPas.account == account).first()
         if information == None:
             return jsonify(errno=RET.USERERR,errmsg="用户不存在或未激活")
     except Exception as e:
-        print(e)
         return ('访问失败404')
     isLogin = {
         'isLogin': True
     }
-    print(password)
     if information.status == int(status):
         if password is None or information.password != password:
             return jsonify(errno=RET.PWDERR, errmsg="密码错误!")
@@ -45,7 +42,7 @@ def Student_information():
     major,groupExtra[id, name, majorField, intro,], teacherList[tid, name, email, introduction,
     major, groupId, zid], [tid, name, email, introduction, major, groupId, zid]
     """
-    sid = request.args.get('sid')
+    sid = request.form.get('sid')
 
     try:
         student_information = Student.query.filter(Student.sid == sid).first()
@@ -54,7 +51,6 @@ def Student_information():
         account_information = AccountPas.query.filter(AccountPas.zid == student_information.zid).first()
         group_teacher_information = Teacher.query.filter(Teacher.group_id == student_information.group_id).all()
     except Exception as e:
-        print(e)
         return jsonify(errno=RET.USERERR,errmsg="用户不存在或未激活")
 
     studentlnfo ={
@@ -87,7 +83,6 @@ def Student_information():
             ]
         }
     }
-    # return jsonify(studentlnfo)
     return jsonify({
             "studentInfo":
                 studentlnfo,
@@ -101,8 +96,8 @@ def Student_withdrawal():
     :param  sid:学生id  gid:小组id
     :return: true&false
     """
-    sid = request.args.get('sid')
-    gid = request.args.get('gid')
+    sid = request.form.get('sid')
+    gid = request.form.get('gid')
     isExit = {
         'isLogin': True
     }
@@ -118,7 +113,6 @@ def Student_withdrawal():
         else:
             return ("选择小组错误")
     except Exception as e:
-        print(e)
         db.session.rollback()
         return jsonify(isnotExit)
     return jsonify(isExit)
@@ -135,7 +129,6 @@ def One_group_information():
         one_group_information = Group.query.filter(Group.id == gid).first()
         group_teacher = Teacher.query.filter(Teacher.group_id == gid).all()
     except Exception as e:
-        print(e)
         return jsonify(errno=RET.NODATA,errmsg="无数据!")
     groupInfo ={
     "id": one_group_information.id,
@@ -173,17 +166,11 @@ def Group_information():
     group_teacher_information = []
     try:
         group_information = Group.query.filter(Group.id != 0).all()
-        print(group_information)
         for i in group_information:
             if Teacher.query.filter(i.id == Teacher.group_id).all() != list():
                 group_teacher_information.append(Teacher.query.filter(i.id == Teacher.group_id).all())
-                print(group_teacher_information)
     except Exception as e:
-        print(e)
         return jsonify(errno=RET.DBERR,errmsg="数据库查询错误!")
-    for b in group_teacher_information:
-        for a in b:
-            print(a.tid)
     return jsonify({
             "groupData":[
                 {
@@ -216,10 +203,8 @@ def Meeting_minutes():
     :return:  commList[hid, zid, tid, time, content, title]
     """
     try:
-        comm_information = Comm.query.filter(Comm.hid ).all()
-        print(comm_information)
+        comm_information = Comm.query.filter(Comm.hid).all()
     except Exception as e:
-        print(e)
         return jsonify(errno=RET.DBERR,errmsg="数据库查询错误!")
     return jsonify({
             'commList':[
@@ -234,47 +219,23 @@ def Meeting_minutes():
           ]
         })
 
-#学生提交会议记录
-@index_blu_student.route(DOUBLE+'/comm/save',methods=['POST'])
-def Student_meetings():
-    """
-    :param   sid:学生id  title:会议标题  content:会议记录
-    :return: true&false
-    """
-    sid = request.args.get('sid')
-    title = request.args.get('title')
-    content = request.args.get('content')
-    try:
-        student_meeting_minutes = Comm(sid=sid,title=title,content=content,time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        db.session.add(student_meeting_minutes)
-        db.session.commit()
-    except Exception as e:
-        print(e)
-        db.session.rollback()
-        return jsonify({
-            "isSuccess":False
-        })
-    return jsonify({
-            "isSuccess":True
-    })
-
 #查询一条会议数据
 @index_blu_student.route(DOUBLE+'/comm/query-one',methods=['POST'])
 def One_meeting_minutes():
     """
-    :param  cid:会议记录id
+    :param  hid:会议记录id
     :return:  comm[hid, zid, tid, time, content, title]
     """
-    hid = request.args.get('hid')
+    hid = request.form.get('hid')
     try:
         meeting_minutes = Comm.query.filter(Comm.hid == hid).first()
-        if Comm.hid != hid:
+        if meeting_minutes == None:
             return ("没有此条数据")
     except Exception as e:
-        return jsonify(errno=RET.DBERR,errmsg="数据库查询错误!")
+        return jsonify(errno=RET.DBERR, errmsg="数据库查询错误!")
     return jsonify(
         {
-            "comm":{
+            "comm": {
                 "hid": meeting_minutes.hid,
                 "sid": meeting_minutes.sid,
                 "tid": meeting_minutes.tid,
