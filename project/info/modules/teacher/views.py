@@ -6,7 +6,6 @@ from info.untils.response_code import RET
 import re
 from datetime import *
 import time
-import json
 
 from info import db
 from info.untils.Jiekou import DOUBLE

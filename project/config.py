@@ -1,5 +1,6 @@
 import logging
 
+
 class Config(object):
     """工程配置信息"""
     DEBUG = True
