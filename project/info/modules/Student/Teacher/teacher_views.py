@@ -6,7 +6,6 @@ from info.untils.Jiekou import DOUBLE
 from datetime import datetime
 import re
 
-
 # 退出导师申请
 @index_blu_student_teacher.route(DOUBLE+'/activity/applying/outteacher', methods=['POST'])
 def ExitTeacher():

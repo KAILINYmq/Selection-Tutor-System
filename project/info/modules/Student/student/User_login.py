@@ -5,7 +5,6 @@ from info import db
 from info.untils.response_code import RET
 from info.untils.Jiekou import DOUBLE
 
-
 #用户登录
 @index_blu_student.route(DOUBLE+'/account/login',methods=['POST'])
 def Users_login():
