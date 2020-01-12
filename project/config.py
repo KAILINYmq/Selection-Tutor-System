@@ -8,7 +8,7 @@ class Config(object):
     # flask-sqlacodegen --outfile models.py --flask mysql+pymysql://root:123456@47.100.50.208:3307/doubleSelect
     # flask-sqlacodegen "mysql+pymysql://root:123456@47.100.50.208:3307/doubleSelect" --tables teacher, student, activity, comm, group, leader, account_pass --outfile "info/models.py"  --flask
     # 数据库的配置信息
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@47.100.50.208:3307/doubleSelect?charset=utf8"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root_txy:123456Ymq.@129.28.155.16:3306/MentorSelect?charset=utf8"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True  # 如果请求结束时候， 如果指定此配置为True，那么SQLAlchemy会自动执行一次commit
 
