@@ -6,7 +6,7 @@ from info.untils.response_code import RET
 import re
 from datetime import *
 import time
-from info import db
+import json
 
 from info import db
 from info.untils.Jiekou import DOUBLE
@@ -160,7 +160,7 @@ def index3():
     # 1.验证数据
     if not re.match('[1-9]\d*', tid_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
-    if not re.match('[1-9]\d*', type_data):
+    if not re.match('[0-9]\d*', type_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 2.查询数据
@@ -179,7 +179,8 @@ def index3():
             "disposeId": 2,
             "disposePerson": "王老师",
             "type": news_item.status,
-            "data": news_item.a_time
+            # TODO
+            "data": str(news_item.a_time)
             })
 
     return jsonify(news_dict_li)
@@ -297,7 +298,7 @@ def index5():
 
 
 
-# TODO OK
+
 @index_blu.route(DOUBLE+'/student/GroStudent', methods=["POST"])
 def GroStudent():
     """
@@ -305,7 +306,7 @@ def GroStudent():
     :return: students, sid, name, className
     """
     # 1. 获取参数
-    gid_data = request.args.get("gid")
+    gid_data = request.form.get("gid")
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', gid_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
@@ -320,7 +321,7 @@ def GroStudent():
         return jsonify(errno=RET.NODATA, errmsg="查询学习小组不存在！")
 
     try:
-        students = [student for student in models.Student.query.filter_by(group_id=gid_data).all()]
+        students = [student for student in index_blu.Student.query.all()]
         student_data = []
         for student in students:
             data = {
@@ -331,7 +332,7 @@ def GroStudent():
             student_data.append(data)
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误2！")
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
 
     msg = {"error_code": 0, "data": {"students": student_data}}
 
@@ -345,7 +346,7 @@ def TeaStudent():
     :return:students, sid, name, className
     """
     # 1. 获取相应数据
-    tid_data = request.args.get("tid")
+    tid_data = request.form.get("tid")
 
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', tid_data):
@@ -363,7 +364,8 @@ def TeaStudent():
 
     # 4. 查询对应学生
     try:
-        students = models.Student.query.filter_by(tid=tid_data).all()
+        # students = models.Student.query.filter_by(tid="tid_data").all()
+        students = models.Student.query.filter_by(tid=tid_data)
         data_list = list()
         for student in students:
             student_data = {
@@ -389,7 +391,7 @@ def queryStuAndHistoryTea():
     :return:groupid
     """
     # 1. 获取相应数据
-    sid_data = request.args.get("sid")
+    sid_data = request.form.get("sid")
 
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', sid_data):
@@ -398,7 +400,7 @@ def queryStuAndHistoryTea():
     # 3. 查询对应的学生
     try:
         student = models.Student.query.get(sid_data)
-        stu_account_pass = models.AccountPas.query.get(student.zid)
+        stu_account_pass = models.AccountPas.get(student.zid)
         student_group = models.Group.query.get(student.group_id)
         stu_teacher = models.Teacher.query.get(student.tid)
         student_data = {
@@ -411,11 +413,11 @@ def queryStuAndHistoryTea():
             }
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误2！")
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
 
     # 3. 查询对应的历史导师
     try:
-        act_list = models.Activity.query.filter_by(sid=student.sid).all()
+        act_list = models.Activity.query.filter_by(sid="student.sid").all()
         his_teacher = list()
         for act in act_list:
             if act.status == 22 or act.status == 25:
@@ -430,9 +432,8 @@ def queryStuAndHistoryTea():
 
         teachers = list()
         for i in group_acts:
-            teacher = models.Teacher.query.get(i[0].tid)
+            # import datatime
             data = {
-                "teaName": teacher.name,
                 "startTime": i[0].a_time.strftime("%Y-%m-%d"),
                 "endTime": i[1].a_time.strftime("%Y-%m-%d")
             }
@@ -458,29 +459,31 @@ def Teacher():
     :return:isApply
     """
     # 1. 提取数据
-    sid_data = request.args.get("sid")
-    tid_data = request.args.get("tid")
-    status_data = request.args.get("status")
+    sid_data = request.form.get("sid")
+    tid_data = request.form.get("tid")
+    status_data = request.form.get("status")
     # 2. 检验参数是否合法
-    if (not re.match('^[0-9]*$', sid_data)) or (not re.match('^[0-9]*$', tid_data)) or (
+    if (not re.match('^[1-9]\d*', sid_data)) or (not re.match('^[0-9]*$', tid_data)) or (
         not re.match('^[0-9]*$', status_data) or (status_data != "22" and status_data != "23")):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
 
     # 3. 查询对应处理的状态
     try:
-        student = models.Student.query.get(sid_data)
-        dt = datetime.now()
-        active = models.Activity(sid=sid_data, tid=tid_data, group_id=student.group_id,
-                             status=status_data, a_time=dt)
-        db.session.add(active)
-        db.session.commit()
         if status_data == "22":
+            student = models.Student.query.get(sid=sid_data)
+            # dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            dt = int(time.mktime(datetime.now().timetuple()))
+            active = models.Activity(sid=sid_data, tid=tid_data,group_id=student.group_id,
+                                 status=status_data, a_time=dt,isdelete=1)
+            index_blu.session.add(active)
+            index_blu.session.commit()
             isApply = True
         else:
             isApply = False
+
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.DBERR, errmsg="查询数据错误2！")
+        return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
 
     data = {"isApply": isApply}
     return jsonify(data)
@@ -493,21 +496,22 @@ def Quitteacher():
     :return:1 or 2
     """
     # 1. 提取数据
-    sid_data = request.args.get("sid")
-    status_data = request.args.get("status")
+    sid_data = request.form.get("sid")
+    status_data = request.form.get("status")
+    print(sid_data)
+    # TODO
     # 2. 检验参数是否合法
-    if (not re.match('^[0-9]*$', sid_data)) or (status_data != "1" and status_data != "2"):
+    if (not re.match('^[1-9]\d*', sid_data)) or (status_data != "1" and status_data != "2"):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
-
     # 3. 根据参数对应操作
     try:
         if status_data == "1":
-            student = models.Student.query.get(sid_data)
-            dt = datetime.now()
+            student = models.Student.query.get(sid=sid_data)
+            dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             active = models.Activity(sid=sid_data,group_id=student.group_id,
-                                 status=status_data, a_time=dt)
-            db.session.add(active)
-            db.session.commit()
+                                 status=status_data, a_time=dt, isdelete=1)
+            index_blu.session.add(active)
+            index_blu.session.commit()
 
     except Exception as e:
         current_app.logger.error(e)
