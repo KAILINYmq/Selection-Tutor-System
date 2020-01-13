@@ -321,8 +321,9 @@ def GroStudent():
         return jsonify(errno=RET.NODATA, errmsg="查询学习小组不存在！")
 
     try:
-        students = [student for student in index_blu.Student.query.all()]
+        students = [student for student in models.Student.query.all()]
         student_data = []
+        print(students)
         for student in students:
             data = {
                 "sid": student.sid,
@@ -347,7 +348,6 @@ def TeaStudent():
     """
     # 1. 获取相应数据
     tid_data = request.form.get("tid")
-
     # 2. 检验参数是否合法
     if not re.match('^[0-9]*$', tid_data):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
@@ -400,7 +400,7 @@ def queryStuAndHistoryTea():
     # 3. 查询对应的学生
     try:
         student = models.Student.query.get(sid_data)
-        stu_account_pass = models.AccountPas.get(student.zid)
+        stu_account_pass = models.AccountPas.query.get(student.zid)
         student_group = models.Group.query.get(student.group_id)
         stu_teacher = models.Teacher.query.get(student.tid)
         student_data = {
@@ -470,13 +470,13 @@ def Teacher():
     # 3. 查询对应处理的状态
     try:
         if status_data == "22":
-            student = models.Student.query.get(sid=sid_data)
+            student = models.Student.query.get(sid_data)
             # dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             dt = int(time.mktime(datetime.now().timetuple()))
             active = models.Activity(sid=sid_data, tid=tid_data,group_id=student.group_id,
-                                 status=status_data, a_time=dt,isdelete=1)
-            index_blu.session.add(active)
-            index_blu.session.commit()
+                                 status=status_data, a_time=dt)
+            db.session.add(active)
+            db.session.commit()
             isApply = True
         else:
             isApply = False
@@ -498,25 +498,21 @@ def Quitteacher():
     # 1. 提取数据
     sid_data = request.form.get("sid")
     status_data = request.form.get("status")
-    print(sid_data)
-    # TODO
     # 2. 检验参数是否合法
     if (not re.match('^[1-9]\d*', sid_data)) or (status_data != "1" and status_data != "2"):
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误！")
     # 3. 根据参数对应操作
     try:
         if status_data == "1":
-            student = models.Student.query.get(sid=sid_data)
+            student = models.Student.query.get(sid_data)
             dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             active = models.Activity(sid=sid_data,group_id=student.group_id,
-                                 status=status_data, a_time=dt, isdelete=1)
-            index_blu.session.add(active)
-            index_blu.session.commit()
+                                 status=status_data, a_time=dt)
+            db.session.add(active)
+            db.session.commit()
 
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="查询数据错误！")
 
     return jsonify(status_data)
-
-
